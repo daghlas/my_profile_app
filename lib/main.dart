@@ -25,7 +25,7 @@ class ProfileCard extends StatelessWidget {
             Center(
               child: CircleAvatar(
                 backgroundImage: AssetImage('assets/thumb.jpeg'),
-                radius: 40.0,
+                radius: 45.0,
               ),
             ),
             Divider(
