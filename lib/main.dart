@@ -12,8 +12,7 @@ class ProfileCard extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.grey[900],
       appBar: AppBar(
-        title: const Text('My Profile'),
-        centerTitle: true,
+        title: const Text('Developer Profile Card'),
         backgroundColor: Colors.grey[850],
         elevation: 0.0,
       ),
@@ -51,7 +50,25 @@ class ProfileCard extends StatelessWidget {
             ),
             SizedBox(height: 30.0),
             Text(
-              'Current Language(s)',
+                'PROFESSION',
+                style: TextStyle(
+                  color: Colors.grey,
+                  letterSpacing: 2.0,
+                )
+            ),
+            SizedBox(height: 10.0),
+            Text(
+                'Mobile Applications Developer',
+                style: TextStyle(
+                    color: Colors.amberAccent,//[200],
+                    letterSpacing: 2.0,
+                    fontSize: 28.0,
+                    fontWeight: FontWeight.bold
+                )
+            ),
+            SizedBox(height: 30.0),
+            Text(
+              'CURRENT LANGUAGE(s)',
               style: TextStyle(
                 color: Colors.grey,
                 letterSpacing: 2.0,
@@ -81,6 +98,24 @@ class ProfileCard extends StatelessWidget {
                         color: Colors.grey,//[400],
                         letterSpacing: 1.0,
                         fontSize: 18.0,
+                    )
+                ),
+              ],
+            ),
+            SizedBox(height: 20.0),
+            Row(
+              children: <Widget>[
+                Icon(
+                  Icons.phone,
+                  color: Colors.grey,//[400],
+                ),
+                SizedBox(width: 10.0),
+                Text(
+                    '0723325631',
+                    style: TextStyle(
+                      color: Colors.grey,//[400],
+                      letterSpacing: 1.0,
+                      fontSize: 18.0,
                     )
                 ),
               ],
