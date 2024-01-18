@@ -13,7 +13,8 @@ class ProfileCard extends StatelessWidget {
       backgroundColor: Colors.grey[900],
       appBar: AppBar(
         title: const Text('Developer Profile Card'),
-        backgroundColor: Colors.grey[850],
+        backgroundColor: Colors.white,
+        foregroundColor: Colors.black,
         elevation: 0.0,
       ),
       body: const Padding(
@@ -23,8 +24,8 @@ class ProfileCard extends StatelessWidget {
           children: <Widget>[
             Center(
               child: CircleAvatar(
-                backgroundImage: AssetImage('assets/thumb.jpeg'),
-                radius: 45.0,
+                backgroundImage: AssetImage('assets/thumb1.jpeg'),
+                radius: 50.0
               ),
             ),
             Divider(
@@ -42,7 +43,7 @@ class ProfileCard extends StatelessWidget {
             Text(
                 'Daghlas Kaire',
                 style: TextStyle(
-                    color: Colors.amberAccent,//[200],
+                    color: Colors.white,//[200],
                     letterSpacing: 2.0,
                     fontSize: 28.0,
                     fontWeight: FontWeight.bold
@@ -60,7 +61,7 @@ class ProfileCard extends StatelessWidget {
             Text(
                 'Mobile Applications Developer',
                 style: TextStyle(
-                    color: Colors.amberAccent,//[200],
+                    color: Colors.white,//[200],
                     letterSpacing: 2.0,
                     fontSize: 28.0,
                     fontWeight: FontWeight.bold
@@ -78,18 +79,28 @@ class ProfileCard extends StatelessWidget {
             Text(
                 'Flutter, Kotlin, Swift',
                 style: TextStyle(
-                    color: Colors.amberAccent,//[200],
+                    color: Colors.white,//[200],
                     letterSpacing: 2.0,
                     fontSize: 28.0,
                     fontWeight: FontWeight.bold
                 )
             ),
-            SizedBox(height: 30.0),
+            Divider(
+              height: 60.0,
+              color: Colors.grey,//[800],
+            ),
+            Text('CONTACTS',
+              style: TextStyle(
+                color: Colors.grey,
+                letterSpacing: 2.0,
+              ),
+            ),
+            SizedBox(height: 20.0),
             Row(
               children: <Widget>[
                 Icon(
                   Icons.email,
-                  color: Colors.grey,//[400],
+                  color: Colors.white,//[400],
                 ),
                 SizedBox(width: 10.0),
                 Text(
@@ -102,12 +113,12 @@ class ProfileCard extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(height: 20.0),
+            SizedBox(height: 15.0),
             Row(
               children: <Widget>[
                 Icon(
                   Icons.phone,
-                  color: Colors.grey,//[400],
+                  color: Colors.white,//[400],
                 ),
                 SizedBox(width: 10.0),
                 Text(
