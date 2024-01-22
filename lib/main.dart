@@ -85,6 +85,24 @@ class ProfileCard extends StatelessWidget {
                     fontWeight: FontWeight.bold
                 )
             ),
+            SizedBox(height: 30.0),
+            Text(
+              'PROFICIENCY LEVEL(/10)',
+              style: TextStyle(
+                color: Colors.grey,
+                letterSpacing: 2.0,
+              ),
+            ),
+            SizedBox(height: 10.0),
+            Text(
+                '8',
+                style: TextStyle(
+                    color: Colors.white,//[200],
+                    letterSpacing: 2.0,
+                    fontSize: 28.0,
+                    fontWeight: FontWeight.bold
+                )
+            ),
             Divider(
               height: 60.0,
               color: Colors.grey,//[800],
@@ -137,3 +155,26 @@ class ProfileCard extends StatelessWidget {
     );
   }
 }
+
+//stateful widget class
+//extends StatefulWidget
+//using this Text widget in the future returns the widget tree created inside..
+//..the State object
+class Test extends StatefulWidget {
+  const Test({super.key});
+
+  @override
+  State<Test> createState() => _TestState();
+  //this instantiates the _TestState class
+  //it links the State object to the StatefulWidget
+}
+
+//this is the state object automatically built for for the created StatefulWidget
+//inside below is where we define the dynamic data we want to keep changing overtime
+class _TestState extends State<Test> {
+  @override
+  Widget build(BuildContext context) {
+    return const Placeholder();
+  }
+}
+
