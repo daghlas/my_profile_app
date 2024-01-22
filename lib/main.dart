@@ -4,9 +4,14 @@ void main() => runApp(const MaterialApp(
       home: ProfileCard(),
     ));
 
-class ProfileCard extends StatelessWidget {
+class ProfileCard extends StatefulWidget {
   const ProfileCard({super.key});
 
+  @override
+  State<ProfileCard> createState() => _ProfileCardState();
+}
+
+class _ProfileCardState extends State<ProfileCard> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -155,26 +160,3 @@ class ProfileCard extends StatelessWidget {
     );
   }
 }
-
-//stateful widget class
-//extends StatefulWidget
-//using this Text widget in the future returns the widget tree created inside..
-//..the State object
-class Test extends StatefulWidget {
-  const Test({super.key});
-
-  @override
-  State<Test> createState() => _TestState();
-  //this instantiates the _TestState class
-  //it links the State object to the StatefulWidget
-}
-
-//this is the state object automatically built for for the created StatefulWidget
-//inside below is where we define the dynamic data we want to keep changing overtime
-class _TestState extends State<Test> {
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
-  }
-}
-
