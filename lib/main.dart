@@ -22,6 +22,7 @@ class _ProfileCardState extends State<ProfileCard> {
       backgroundColor: Colors.grey[900],
       appBar: AppBar(
         title: const Text('Developer Profile Card'),
+        centerTitle: true,
         backgroundColor: Colors.white,
         foregroundColor: Colors.black,
         elevation: 0.0,
