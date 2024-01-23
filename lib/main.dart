@@ -19,12 +19,12 @@ class _ProfileCardState extends State<ProfileCard> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[900],
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: const Text('Developer Profile Card'),
         centerTitle: true,
-        backgroundColor: Colors.white,
-        foregroundColor: Colors.black,
+        backgroundColor: Colors.blue,
+        foregroundColor: Colors.white,
         elevation: 0.0,
       ),
       floatingActionButton: FloatingActionButton(
@@ -33,8 +33,10 @@ class _ProfileCardState extends State<ProfileCard> {
             proficiencyLevel ++;
           });
         },
-        backgroundColor: Colors.white,
-        child: const Icon(Icons.add),
+        backgroundColor: Colors.blue,
+        child: const Icon(Icons.add,
+        color: Colors.white,
+        ),
       ),
       body: Padding(
         padding: const EdgeInsets.fromLTRB(30.0, 40.0, 30.0, 0.0),
@@ -49,7 +51,7 @@ class _ProfileCardState extends State<ProfileCard> {
             ),
             const Divider(
               height: 60.0,
-              color: Colors.grey,//[800],
+              color: Colors.blue,//[800],
             ),
             const Text(
                 'NAME',
@@ -62,7 +64,7 @@ class _ProfileCardState extends State<ProfileCard> {
             const Text(
                 'Daghlas Kaire',
                 style: TextStyle(
-                    color: Colors.white,//[200],
+                    color: Colors.blue,//[200],
                     letterSpacing: 2.0,
                     fontSize: 28.0,
                     fontWeight: FontWeight.bold
@@ -80,7 +82,7 @@ class _ProfileCardState extends State<ProfileCard> {
             const Text(
                 'Mobile Applications Developer',
                 style: TextStyle(
-                    color: Colors.white,//[200],
+                    color: Colors.blue,//[200],
                     letterSpacing: 2.0,
                     fontSize: 28.0,
                     fontWeight: FontWeight.bold
@@ -98,7 +100,7 @@ class _ProfileCardState extends State<ProfileCard> {
             const Text(
                 'Flutter, Kotlin, Swift',
                 style: TextStyle(
-                    color: Colors.white,//[200],
+                    color: Colors.blue,//[200],
                     letterSpacing: 2.0,
                     fontSize: 28.0,
                     fontWeight: FontWeight.bold
@@ -116,7 +118,7 @@ class _ProfileCardState extends State<ProfileCard> {
             Text(
                 '$proficiencyLevel',
                 style: const TextStyle(
-                    color: Colors.white,//[200],
+                    color: Colors.blue,//[200],
                     letterSpacing: 2.0,
                     fontSize: 28.0,
                     fontWeight: FontWeight.bold
@@ -124,7 +126,7 @@ class _ProfileCardState extends State<ProfileCard> {
             ),
             const Divider(
               height: 60.0,
-              color: Colors.grey,//[800],
+              color: Colors.blue,//[800],
             ),
             const Text('CONTACTS',
               style: TextStyle(
@@ -137,7 +139,7 @@ class _ProfileCardState extends State<ProfileCard> {
               children: <Widget>[
                 Icon(
                   Icons.email,
-                  color: Colors.white,//[400],
+                  color: Colors.blue,//[400],
                 ),
                 SizedBox(width: 10.0),
                 Text(
@@ -155,7 +157,7 @@ class _ProfileCardState extends State<ProfileCard> {
               children: <Widget>[
                 Icon(
                   Icons.phone,
-                  color: Colors.white,//[400],
+                  color: Colors.blue,//[400],
                 ),
                 SizedBox(width: 10.0),
                 Text(
